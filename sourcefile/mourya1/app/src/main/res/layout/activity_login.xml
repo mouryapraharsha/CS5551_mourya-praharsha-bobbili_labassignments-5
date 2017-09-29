@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/mourya2"
+    tools:context="com.example.user.imagelocation.LoginActivity">
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/etPassword" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/etUsername"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:onClick="checkCredentials"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/tvRegisterLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBaseline="@+id/lbl_Error"
+        android:layout_alignBottom="@+id/lbl_Error"
+        android:layout_alignEnd="@+id/bSignIn" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Invalid Credentials"
+        android:id="@+id/lbl_Error"
+        android:layout_marginTop="38dp"
+        android:visibility="invisible"
+        android:textColor="#e12c2c"
+        android:singleLine="false"
+        android:layout_below="@+id/bSignIn"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
